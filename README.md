@@ -20,17 +20,6 @@ The curriculum is strictly sequential. Each phase builds on the last. Activation
 
 ---
 
-## Current Files
-
-| File | Description | Status |
-|------|-------------|--------|
-| `basic-neural-net.py` | Single linear neuron: forward pass, MSE loss, manual gradient, SGD | Done |
-| `complex-neural-net.py` | Two-layer network: sigmoid activation, chain-rule backprop | Done |
-| `rnn.py` | Recurrent Neural Network: BPTT from scratch | Done |
-| `lstm.py` | Long Short-Term Memory: all four gates, BPTT | Done |
-
----
-
 ## Legend
 
 | Label | Meaning |
@@ -75,7 +64,7 @@ Where everything begins. A single computation unit traced scalar by scalar.
 | 4 | Vanilla SGD weight update | Scratch | Done |
 | 5 | Activation: Sigmoid, formula, derivative, saturation behaviour | Scratch | Done |
 | 6 | Two-layer network with sigmoid and chain-rule backprop | Scratch | Done |
-| 7 | Activation: Tanh, formula, derivative, comparison to sigmoid in hidden layers | Scratch | Pending |
+| 7 | Activation: Tanh, formula, derivative, comparison to sigmoid in hidden layers | Scratch | Done |
 | 8 | Bias terms: role in shifting decision boundaries | Scratch | Pending |
 
 ---
@@ -88,7 +77,7 @@ The algorithm that makes training possible, derived from first principles then l
 |---|---------|------|--------|
 | 1 | Manual chain rule: scalar, step-by-step trace | Scratch | Done |
 | 2 | Computational graph: nodes, edges, local gradients | Scratch | Pending |
-| 3 | Vectorized backprop: full matrix form, no loops | Scratch | Pending |
+| 3 | Vectorized backprop: full matrix form, no loops | Scratch | Done |
 | 4 | Shape sanity checks at every layer | Scratch | Pending |
 | 5 | Loss decreasing sanity test | Scratch | Pending |
 
@@ -135,11 +124,11 @@ Introduced throughout the curriculum exactly where each is first needed. Collect
 | # | Activation | First Used | Derivative | Vanishing Gradient Risk | Status |
 |---|-----------|-----------|-----------|------------------------|--------|
 | 1 | Sigmoid | Phase 2 | s(x)(1-s(x)) | High | Done |
-| 2 | Tanh | Phase 2 | 1-tanh^2(x) | Moderate | Pending |
-| 3 | ReLU | Phase 9 | 1 if x > 0, else 0 | Low | Pending |
+| 2 | Tanh | Phase 2 | 1-tanh^2(x) | Moderate | Done |
+| 3 | ReLU | Phase 9 | 1 if x > 0, else 0 | Low | Done |
 | 4 | Leaky ReLU | Phase 9 | alpha if x <= 0, else 1 | Very Low | Pending |
 | 5 | ELU | Phase 9 | alpha*e^x if x < 0 | Very Low | Pending |
-| 6 | Softmax (numerically stable) | Phase 8 | Jacobian form | None | Pending |
+| 6 | Softmax (numerically stable) | Phase 8 | Jacobian form | None | Done |
 | 7 | GELU | Phase 11 | Approximated | Very Low | Pending |
 | 8 | Swish / SiLU | Phase 11 | x*s(x) + s(x)(1 - x*s(x)) | Very Low | Pending |
 | 9 | Activation comparison: vanishing gradient demo across all | | | | Pending |
@@ -155,9 +144,9 @@ Each loss function derived from probability theory where applicable. Gradients w
 | 1 | Mean Squared Error | Regression | Scratch | Done |
 | 2 | Mean Absolute Error | Robust regression | Scratch | Pending |
 | 3 | Huber Loss | Regression with outliers | Scratch | Pending |
-| 4 | Binary Cross-Entropy | Binary classification | Scratch | Pending |
+| 4 | Binary Cross-Entropy | Binary classification | Scratch | Done |
 | 5 | Categorical Cross-Entropy | Multi-class classification | Scratch | Pending |
-| 6 | Softmax and Cross-Entropy combined gradient, single efficient backward pass | Multi-class | Scratch | Pending |
+| 6 | Softmax and Cross-Entropy combined gradient, single efficient backward pass | Multi-class | Scratch | Done |
 
 ---
 
@@ -167,12 +156,12 @@ Techniques that make deep networks trainable. Applied from dense networks onward
 
 | # | Technique | Type | Status |
 |---|-----------|------|--------|
-| 1 | L1 Regularization: sparse weights | Scratch | Pending |
-| 2 | L2 Weight Decay: penalize large weights | Scratch | Pending |
-| 3 | Dropout: inverted dropout, training vs inference behaviour | Scratch | Pending |
+| 1 | L1 Regularization: sparse weights | Scratch | Done |
+| 2 | L2 Weight Decay: penalize large weights | Scratch | Done |
+| 3 | Dropout: inverted dropout, training vs inference behaviour | Scratch | Done |
 | 4 | Gradient Clipping: norm clipping and value clipping | Scratch | Pending |
-| 5 | Xavier and Glorot Initialization: for sigmoid and tanh | Scratch | Pending |
-| 6 | He Initialization: for ReLU and variants | Scratch | Pending |
+| 5 | Xavier and Glorot Initialization: for sigmoid and tanh | Scratch | Done |
+| 6 | He Initialization: for ReLU and variants | Scratch | Done |
 | 7 | Batch Normalization: forward pass and full backward derivation | Scratch | Pending |
 | 8 | Layer Normalization: used in Transformers and sequence models | Scratch | Pending |
 
@@ -188,9 +177,9 @@ Activations active in this phase: Sigmoid, Tanh, ReLU, Softmax
 |---|---------|------|--------|
 | 1 | Dense layer class: forward and backward | Scratch | Pending |
 | 2 | Parameter dictionaries and state management | Scratch | Pending |
-| 3 | Deep MLP with configurable depth and width | Scratch | Pending |
+| 3 | Deep MLP with configurable depth and width | Scratch | Done |
 | 4 | Regression: synthetic data, linear and nonlinear | Scratch | Pending |
-| 5 | Binary classification: circles and moons datasets | Scratch | Pending |
+| 5 | Binary classification: circles and moons datasets | Scratch | Done |
 | 6 | Multi-class classification: Softmax output layer | Scratch | Pending |
 | 7 | Train, validation, and test split | Scratch | Pending |
 | 8 | Overfitting a tiny dataset: sanity check | Scratch | Pending |
