@@ -197,12 +197,12 @@ Activations introduced in this phase: ReLU (dominant), Leaky ReLU
 
 | # | Concept | Type | Status |
 |---|---------|------|--------|
-| 1 | 2D convolution: naive loop implementation | Scratch | Pending |
+| 1 | 2D convolution: naive loop implementation | Scratch | Done |
 | 2 | Convolution: vectorized via im2col | Scratch | Pending |
-| 3 | Padding and stride: output size derivation | Scratch | Pending |
-| 4 | Backprop through convolution: gradient w.r.t. input and kernel | Scratch | Pending |
-| 5 | Max pooling: forward pass and backward | Scratch | Pending |
-| 6 | Average pooling | Scratch | Pending |
+| 3 | Padding and stride: output size derivation | Scratch | Done |
+| 4 | Backprop through convolution: gradient w.r.t. input and kernel | Scratch | Done |
+| 5 | Max pooling: forward pass and backward | Scratch | Done |
+| 6 | Average pooling | Scratch | Done |
 | 7 | Flatten layer | Scratch | Pending |
 | 8 | Full CNN: conv, pool, flatten, dense | Scratch | Pending |
 | 9 | LeNet-5 style architecture | Scratch | Pending |
