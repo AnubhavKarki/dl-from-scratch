@@ -89,12 +89,12 @@ How gradients move through data in practice. Batching strategies, epoch manageme
 
 | # | Concept | Type | Status |
 |---|---------|------|--------|
-| 1 | Batch Gradient Descent | Scratch | Pending |
-| 2 | Stochastic Gradient Descent: online, one sample at a time | Scratch | Pending |
-| 3 | Mini-Batch Gradient Descent | Scratch | Pending |
-| 4 | Dataset shuffling per epoch and why it matters | Scratch | Pending |
+| 1 | Batch Gradient Descent | Scratch | Done |
+| 2 | Stochastic Gradient Descent: online, one sample at a time | Scratch | Done |
+| 3 | Mini-Batch Gradient Descent | Scratch | Done |
+| 4 | Dataset shuffling per epoch and why it matters | Scratch | Done |
 | 5 | Gradient averaging vs summing: the math difference | Scratch | Pending |
-| 6 | Learning rate scheduling: step decay, exponential decay | Scratch | Pending |
+| 6 | Learning rate scheduling: step decay, exponential decay | Scratch | Done |
 | 7 | Warmup and cosine annealing | Scratch | Pending |
 
 ---
@@ -105,12 +105,12 @@ The full optimizer lineage, from raw SGD to modern adaptive methods. Each implem
 
 | # | Optimizer | Paper | Type | Status |
 |---|-----------|-------|------|--------|
-| 1 | Vanilla SGD | | Scratch | Pending |
-| 2 | SGD with Momentum | Polyak, 1964 | Scratch | Pending |
+| 1 | Vanilla SGD | | Scratch | Done |
+| 2 | SGD with Momentum | Polyak, 1964 | Scratch | Done |
 | 3 | Nesterov Accelerated Gradient | Nesterov, 1983 | Scratch | Pending |
 | 4 | Adagrad: adaptive per-parameter learning rate | Duchi et al., 2011 | Scratch | Pending |
 | 5 | RMSProp: leaky Adagrad | Hinton, unpublished 2012 | Scratch | Pending |
-| 6 | Adam: adaptive moments | Kingma and Ba, 2014 | Scratch | Pending |
+| 6 | Adam: adaptive moments | Kingma and Ba, 2014 | Scratch | Done |
 | 7 | AdamW: decoupled weight decay | Loshchilov and Hutter, 2017 | Scratch | Pending |
 | 8 | Nadam: Adam with Nesterov momentum | Dozat, 2016 | Scratch | Pending |
 | 9 | Optimizer comparison on identical task, convergence curves | | Scratch | Pending |
@@ -233,7 +233,7 @@ Activations dominant in this phase: Tanh (state), Sigmoid (gates)
 | 9 | Bidirectional RNN: forward and backward pass over sequence | Scratch | Pending |
 | 10 | Bidirectional LSTM | Scratch | Pending |
 | 11 | Sequence-to-sequence: encoder-decoder with RNN | Scratch | Pending |
-| 12 | Bahdanau Attention: soft alignment over encoder states | Scratch | Pending |
+| 12 | Bahdanau Attention: soft alignment over encoder states | Scratch | Done |
 | 13 | Attention with LSTM decoder | Scratch | Pending |
 
 ---
@@ -246,7 +246,7 @@ Activations introduced in this phase: GELU, Swish / SiLU
 
 | # | Component | Paper | Type | Status |
 |---|----------|-------|------|--------|
-| 1 | Scaled dot-product attention: Q, K, V from scratch | Vaswani et al., 2017 | Scratch | Pending |
+| 1 | Scaled dot-product attention: Q, K, V from scratch | Vaswani et al., 2017 | Scratch | Done |
 | 2 | Multi-head attention: projection, split, concat | Vaswani et al., 2017 | Scratch | Pending |
 | 3 | Causal masking for decoder and autoregressive models | Vaswani et al., 2017 | Scratch | Pending |
 | 4 | Sinusoidal positional encoding: derivation and implementation | Vaswani et al., 2017 | Scratch | Pending |
