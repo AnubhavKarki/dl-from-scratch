@@ -28,7 +28,7 @@ def softmax(x, axis=-1):
 
 def attention_qkv(Q, K, V):
     d_k = K.shape[-1]
-    scores = np.dot(Q, K.T) / np.sqrt(d_k)
+    scores = Q @ K.T / np.sqrt(d_k)
     weights = softmax(scores, axis=-1)
     return weights @ V, weights
 
