@@ -23,7 +23,7 @@ import numpy as np
 
 def softmax(x, axis=-1):
     e = np.exp(x - x.max(axis=axis, keepdims=True))
-    return e / e.sum(axis=axis, keepdims=True) 
+    return e / e.sum(axis=axis, keepdims=True)
 
 
 def attention_qkv(Q, K, V):
