@@ -248,17 +248,18 @@ Activations introduced in this phase: GELU, Swish / SiLU
 |---|----------|-------|------|--------|
 | 1 | Scaled dot-product attention: Q, K, V from scratch | Vaswani et al., 2017 | Scratch | Done |
 | 2 | Multi-head attention: projection, split, concat | Vaswani et al., 2017 | Scratch | Pending |
-| 3 | Causal masking for decoder and autoregressive models | Vaswani et al., 2017 | Scratch | Pending |
-| 4 | Sinusoidal positional encoding: derivation and implementation | Vaswani et al., 2017 | Scratch | Pending |
+| 3 | Causal masking for decoder and autoregressive models | Vaswani et al., 2017 | Scratch | Done |
+| 4 | Sinusoidal positional encoding: derivation and implementation | Vaswani et al., 2017 | Scratch | Done |
 | 5 | Learned positional embeddings | | Scratch | Pending |
-| 6 | Feed-forward sublayer: two linear layers with GELU | | Scratch | Pending |
-| 7 | Encoder block: multi-head attention, FFN, LayerNorm, residual | Vaswani et al., 2017 | Scratch | Pending |
-| 8 | Decoder block: masked self-attention, cross-attention, FFN | Vaswani et al., 2017 | Scratch | Pending |
-| 9 | Full Transformer: encoder-decoder, translation task | Vaswani et al., 2017 | Scratch | Pending |
+| 6 | Feed-forward sublayer: two linear layers with ReLU, residual, LayerNorm | Vaswani et al., 2017 | Scratch | Done |
+| 7 | Encoder block: multi-head attention, FFN, LayerNorm, residual | Vaswani et al., 2017 | Library | Done |
+| 8 | Decoder block: masked self-attention, cross-attention, FFN | Vaswani et al., 2017 | Library | Done |
+| 9 | Full Transformer: encoder-decoder, translation task | Vaswani et al., 2017 | Library | Done |
 | 10 | GPT-style decoder-only Transformer: causal language modelling | Radford et al., 2018 | Scratch | Pending |
 | 11 | BERT-style encoder-only Transformer: masked language modelling | Devlin et al., 2018 | Scratch | Pending |
 | 12 | Byte-Pair Encoding tokenizer from scratch | Sennrich et al., 2016 | Scratch | Pending |
-| 13 | Fine-tuning a pretrained BERT (Hugging Face): map concepts to API | | Library | Pending |
+| 13 | Fine-tuning a pretrained DistilBERT for NER (Hugging Face) | | Library | Done |
+| 14 | Extractive Question Answering with DistilBERT (TensorFlow + PyTorch) | | Library | Done |
 
 ---
 
